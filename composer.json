@@ -1,0 +1,24 @@
+{
+	"name": "sergix44/oddcast-tts-php",
+	"description": "A PHP interface to the online Oddcast demo API",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Sergio Brighenti",
+			"email": "sergio@brighenti.me"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-0": {
+			"SergiX44": "src/"
+		}
+	},
+	"config": {
+		"optimize-autoloader": true
+	},
+	"require-dev": {
+		"phpunit/phpunit": "8"
+	}
+}
