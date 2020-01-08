@@ -72,4 +72,16 @@ class OddcastTest extends TestCase
         $this->assertInstanceOf(\SergiX44\OddcastTTS\Voices\Italian\Raffaele::class, $i->getVoice());
     }
 
+    /**
+     * @test
+     */
+    public function it_works_with_custom_text() {
+        $i = new \SergiX44\OddcastTTS\Oddcast();
+
+        $i->setText('World!');
+
+        $this->assertSame('World!', $i->getText());
+        $this->assertNotEmpty($i->getAudio());
+    }
+
 }

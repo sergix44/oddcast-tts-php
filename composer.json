@@ -13,12 +13,14 @@
 		"php": "^7.1"
 	},
 	"autoload": {
-		"psr-0": {
-			"SergiX44": "src/"
+		"psr-4": {
+			"SergiX44\\OddcastTTS\\": "src/"
 		}
 	},
-	"config": {
-		"optimize-autoloader": true
+	"autoload-dev": {
+		"psr-4": {
+			"SergiX44\\Tests\\OddcastTTS\\": "tests/"
+		}
 	},
 	"require-dev": {
 		"phpunit/phpunit": "8"
