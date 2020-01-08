@@ -2,6 +2,7 @@
 
 
 use PHPUnit\Framework\TestCase;
+use SergiX44\OddcastTTS\Voices;
 
 class OddcastTest extends TestCase
 {
@@ -33,7 +34,7 @@ class OddcastTest extends TestCase
     {
         $i = new \SergiX44\OddcastTTS\Oddcast();
 
-        $this->assertTrue(filter_var($i->getUrl(), FILTER_VALIDATE_URL) !== FALSE);
+        $this->assertTrue(filter_var($i->getUrl(), FILTER_VALIDATE_URL) !== false);
     }
 
     /**
@@ -43,7 +44,7 @@ class OddcastTest extends TestCase
     {
         $i = new \SergiX44\OddcastTTS\Oddcast();
 
-        $this->assertTrue($i->getAudio() !== FALSE);
+        $this->assertTrue($i->getAudio() !== false);
     }
 
     /**
@@ -75,7 +76,8 @@ class OddcastTest extends TestCase
     /**
      * @test
      */
-    public function it_works_with_custom_text() {
+    public function it_works_with_custom_text()
+    {
         $i = new \SergiX44\OddcastTTS\Oddcast();
 
         $i->setText('World!');
